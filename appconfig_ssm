@@ -1,0 +1,60 @@
+Enable trust relationship with app.config for the role 
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "appconfig.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+
+
+Rollback Cloudwatch alarms
+{
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "cloudwatch:DescribeAlarms"
+                ],
+                "Resource": "*"
+            }
+        ]
+    }
+
+SSM permissions (parameter store)
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetParameter"
+            ],
+            "Resource": [
+                "arn:aws:ssm:AWS Region:account_ID:parameter/parameter_name"
+            ]
+        }
+    ]
+  }
+  SSM Document   - Platform's team 
+  {
+
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetDocument"
+            ],
+            "Resource": [
+                "arn:aws:ssm:AWS Region:account_ID:document/document_name"
+            ]
+        }
+    ]
+}
