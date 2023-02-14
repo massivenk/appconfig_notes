@@ -7,4 +7,16 @@ Configure permissions for rollback on CloudWatch alarms
 WORKING WITH AppConfig
 
 Configurations to host or targets
-   CloudFormation / Terraform can be used for AppConfig artifacts
+   1) CloudFormation / Terraform can be used for AppConfig artifacts
+   2) Deploy the environment (Absa Content Prod and Dev)
+          can define environment for subcomponents 
+   3) Configure configuration profile and feature flags
+          URI where configurations are store ()
+          IAM role that provides access to the configuration
+          Validator (JSON Schema or Lambda)
+      FeatureFlag  :  turn on new features timely deployment
+      Freeform     :  carefully introduce changes to application
+   4) Create a deployment strategy
+          Deployment type : Linear or Exponetial
+          Deployment strategies 
+            
