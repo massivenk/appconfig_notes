@@ -1,0 +1,10 @@
+IAM  - Admin access
+CLI - Access to the AWS account 
+Configure permissions for rollback on CloudWatch alarms
+    rollbacks teh previous version of the configuration in response to CloudWatch alarms (monitor)
+    IAM role monitors rollback configuration cloudwatch alarms for own account - otherwise cross-account role is required
+    
+WORKING WITH AppConfig
+
+Configurations to host or targets
+   CloudFormation / Terraform can be used for AppConfig artifacts
