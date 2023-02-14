@@ -1,0 +1,10 @@
+Data Plane Service
+   uses two API actions
+       StartConfigurationSession
+           Manage CLientID
+        
+       GetLatestConfiguration
+   uses endpoints
+       Available in Cape Town and Ireland
+       Dedicated data API  Endpoint  imporves code structure separates dataplane and control plane
+    
